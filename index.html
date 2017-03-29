@@ -36,7 +36,7 @@
 			if (!Detector.webgl) {
 				Detector.addGetWebGLMessage();
 			} else {
-				var assetURL = ".";
+				var assetURL = window.location.href;
 				StarDrifter.run(assetURL);
 			}
 		</script>

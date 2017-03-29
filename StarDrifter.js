@@ -88,7 +88,7 @@ var StarDrifter = {
     },
 
     skyboxAssets:function(){
-        var imagePrefix = this.rootURI + "/skybox/starry-night-2048_";
+        var imagePrefix = this.rootURI + "skybox/starry-night-2048_";
         var directions = [ "right","left",  "up", "down", "front", "back"];
         var imageSuffix = ".jpg";
         var skyboxImages  = [];
@@ -128,7 +128,7 @@ var StarDrifter = {
     },
 
     loadRocks:function(){
-    	var rockPrefix = this.rootURI + "/models/Asteroid-";
+    	var rockPrefix = this.rootURI + "models/Asteroid-";
     	var rocks = ['2', '3', '4', '5'];
     	var rockSuffix = 'dae';
     	var rockURIList = this.listLoader(rockPrefix, rocks, rockSuffix);
@@ -184,7 +184,7 @@ var StarDrifter = {
     },
 
     loadRocket:function(){
-        var model = this.rootURI + "/models/rocket.dae";
+        var model = this.rootURI + "models/rocket.dae";
         this.toLoad++;
         
         this.rocketLoader = new THREE.ColladaLoader();
